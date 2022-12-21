@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List com Firebase</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" class="css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div class="background-image">
+        <img src="./assets/bg-desktop-dark.jpg"/>
+    </div>
+    <div class="content">
+        <div class="header">
+            <h1>TODO</h1>
+            <img src="./assets/icon-sun.svg" />
+        </div>
+        <div class="toDo">
+            <div class="check">
+            </div>
+            <form class="newToDo" onsubmit="addItem(event)">
+                <input id="Todo-input" type="text" placeholder="Crie uma nova tarefa..."/>
+            </form>
+        </div>
+        <div class="itens">
+            <div class="lista">
+                <div class="todo-item">
+                    <div class="check"></div>
+                    <div class="text">
+                        Cabelo
+                    </div>
+                </div>
+                <div class="todo-item">
+                    <div class="check"></div>
+                    <div class="text">
+                        academia
+                    </div>
+                </div>
+                <div class="todo-item">
+                    <div class="check"></div>
+                    <div class="text">
+                        Estudar
+                    </div>
+                </div>
+            </div>
+            <div class="itens-info">
+                <div class="esq">
+                    <h3>5 Itens</h3>
+                </div>
+                <div class="meio">
+                    <h3 class="ativo">Todos</h3>
+                    <h3>Ativos</h3>
+                    <h3>Completos</h3>
+                </div>
+                <div class="dir">
+                    <h3>Apagar os completos</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+body {
+    background-color: #181824;
+    font-family: 'inter';
+    margin: 0;
+}
+
+.background-image {
+    position: absolute;
+    width: 100%;
+    height: 350px;
+}
+.background-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+/* CONTENT */
+.content {
+    position: relative;
+    width: 50%;
+    margin: auto;
+    padding-top: 60px;
+}
+/* HEADER */
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+h1 {
+    font-size: 50px;
+    color: white;
+    letter-spacing: 12px;
+}
+.header img {
+    cursor: pointer;
+}
+
+/* TODO */
+.toDo {
+    width: 96%;
+    background: #24273D;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.toDo > form {
+    display: flex;
+    flex-grow: 1;
+}
+.newToDo > input[type="text"] {
+    background: #24273D;
+    border: none;
+    color: #CBCDE6;
+    flex-grow: 1;
+    font-size: 24px;
+}
+.newToDo > input[type="text"]:focus-visible {
+    outline: none;
+}
+.newToDo > input[type="text"]::placeholder {
+    color: #CBCDE6;
+}
+.check {
+    border: solid 2px gray;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    margin-right: 15px;
+    transition: all 0.25s;
+}
+.check:hover {
+    background: linear-gradient(135deg, #55DDFF 0%, #C05BF3 100%);
+}
+
+/* LISTA */
+.itens {
+    background-color: hsl(235, 24%, 19%);
+    margin-top: 30px;
+
+}
+.todo-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid hsl(237, 14%, 26%);
+}
+.todo-item:hover {
+    transform: translateY(2px);
+    box-shadow: 0 0px 7px 0px hsl(235, 21%, 11%);
+    border-color: hsl(235, 24%, 19%);
+}
+.text {
+    font-size: 22px;
+    color: #CBCDE6;
+}
+/* INFO */
+.itens-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 30px;
+}
+h3 {
+    color: hsl(233, 14%, 35%);
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+}
+h3:hover, .ativo {
+    color: hsl(220, 98%, 61%);
+}
+.meio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.meio h3 {
+    margin: 0 5px;
+}
