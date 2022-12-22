@@ -8,10 +8,34 @@
     <title>To-Do List com Firebase</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
     <link rel="stylesheet" href="styles.css" class="css">
     <script src="./script.js"></script>
 </head>
 <body>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyDwT9MiFFzLfJNUT1Z9R6vpv-srWIVfbG0",
+          authDomain: "to-do-list-c00b1.firebaseapp.com",
+          projectId: "to-do-list-c00b1",
+          storageBucket: "to-do-list-c00b1.appspot.com",
+          messagingSenderId: "630867365287",
+          appId: "1:630867365287:web:1a8a76f8427e1c2df0ba82"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+
     <div class="background-image">
         <img src="./assets/bg-desktop-dark.jpg"/>
     </div>
